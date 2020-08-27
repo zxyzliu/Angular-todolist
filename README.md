@@ -1,4 +1,4 @@
-# Angular6Todolist
+# Angular Todolist
 
 This is the first Angular 6 Projet that I have done, in this project I have realised the function as follow:
 
@@ -30,4 +30,4 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-# Angular6-todolist
+# Angular-todolist
