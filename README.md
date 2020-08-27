@@ -1,4 +1,4 @@
-# Angular6Todolist
+# Angular Todolist
 
 This is the first Angular 6 Projet that I have done, in this project I have realised the function as follow:
 
