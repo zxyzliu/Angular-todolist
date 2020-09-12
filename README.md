@@ -11,7 +11,7 @@ Also since the time manner I am still working on sub-level todos and time relate
 
 Please see the instruction below:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
+This project was initial generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4, and now upgraded to 9.1.12
 
 ## Running Project
 
