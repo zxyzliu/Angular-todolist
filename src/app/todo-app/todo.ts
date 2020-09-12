@@ -1,10 +1,9 @@
 export class Todo {
-id: number;
-value: string;
-done: boolean = false;
-edit: boolean = false;
-constructor(values: Object = {}) {
-	Object.assign(this, values);
+    id: number;
+    value: string;
+    done = false;
+    edit = false;
+    constructor(values: Object = {}) {
+        Object.assign(this, values);
+    }
 }
-}
-

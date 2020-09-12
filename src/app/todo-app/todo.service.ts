@@ -3,60 +3,54 @@ import { Todo } from './todo';
 
 @Injectable()
 export class TodoService {
-  todos: Todo[] = [];
-  nextId = 0;
+    todos: Todo[] = [];
+    nextId = 0;
 
-  constructor() { }
+    constructor() {}
 
-
-  addTodo(todo: Todo): TodoService {
-    todo.id = Date.now();
-    this.todos.push(todo);
-    return this;
-  }
-
-  deleteTodoById(id: number): TodoService {
-    this.todos = this.todos
-      .filter(todo => todo.id !== id);
-    return this;
-  }
-
-  deleteAllTodo(): TodoService {
-    this.todos = this.todos
-      .filter(todo => !todo.done);
-    return this;
-  }
-
-  updateTodoById(id: number, values: Object = {}): Todo {
-    const todo = this.getTodoById(id);
-    if (!todo) {
-      return null;
+    addTodo(todo: Todo): TodoService {
+        todo.id = Date.now();
+        this.todos.push(todo);
+        return this;
     }
-    Object.assign(todo, values);
-    return todo;
-  }
 
+    deleteTodoById(id: number): TodoService {
+        this.todos = this.todos.filter(todo => todo.id !== id);
+        return this;
+    }
 
-  getAllTodos(): Todo[] {
-    return this.todos;
-  }
+    deleteAllTodo(): TodoService {
+        this.todos = this.todos.filter(todo => !todo.done);
+        return this;
+    }
 
-  getAllDoneTodos(): Todo[] {
-    return this.todos.filter(todo => todo.done);
-  }
+    updateTodoById(id: number, values: Object = {}): Todo {
+        const todo = this.getTodoById(id);
+        if (!todo) {
+            return null;
+        }
+        Object.assign(todo, values);
+        return todo;
+    }
 
-  // Simulate GET /todos/:id
-  getTodoById(id: number): Todo {
-    return this.todos
-      .filter(todo => todo.id === id)
-      .pop();
-  }
+    getAllTodos(): Todo[] {
+        return this.todos;
+    }
 
-  // Toggle todo done
-  toggleTodoDone(todo: Todo) {
-    const updatedTodo = this.updateTodoById(todo.id, {
-      done: !todo.done
-    });
-    return updatedTodo;
-  }
+    getAllDoneTodos(): Todo[] {
+        return this.todos.filter(todo => todo.done);
+    }
+
+    // Simulate GET /todos/:id
+    getTodoById(id: number): Todo {
+        return this.todos.filter(todo => todo.id === id).pop();
+    }
+
+    // Toggle todo done
+    toggleTodoDone(todo: Todo) {
+        const updatedTodo = this.updateTodoById(todo.id, {
+            done: !todo.done
+        });
+        return updatedTodo;
+    }
 }

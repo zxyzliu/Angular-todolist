@@ -1,6 +1,6 @@
 # Angular Todolist
 
-This is the first Angular 6 Projet that I have done, in this project I have realised the function as follow:
+This is the first Angular Projet that I have done, in this project I have realised the function as follow:
 
 1.As a user, I can add a TODO to the list.
 2.As a user, I can see all the TODOs on the list in an overview.
@@ -20,7 +20,6 @@ Run 'ng serve -o' for a server. And `http://localhost:4200/` webpage will pop ou
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
 
 ## Running unit tests
 
