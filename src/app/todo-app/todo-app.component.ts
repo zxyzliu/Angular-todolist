@@ -14,7 +14,6 @@ export class TodoAppComponent {
 
     /**
      * add todo
-     * @memberof TodoAppComponent
      */
     addTodo(): void {
         if (!this.newTodo) {
@@ -30,7 +29,6 @@ export class TodoAppComponent {
 
     /**
      * destroy todo
-     * @memberof TodoAppComponent
      */
     destroyTodo(todo: Todo): void {
         this.todoService.deleteTodoById(todo.id);
@@ -38,7 +36,6 @@ export class TodoAppComponent {
 
     /**
      * destroy done todo
-     * @memberof TodoAppComponent
      */
     destroyAllTodo(): void {
         if (!this.clearCount) {
@@ -52,7 +49,6 @@ export class TodoAppComponent {
 
     /**
      * toggle todo done
-     * @memberof TodoAppComponent
      */
     toggleDoneTodo(todo: Todo): void {
         this.todoService.toggleTodoDone(todo);
@@ -60,7 +56,6 @@ export class TodoAppComponent {
 
     /**
      * toggle all todo done
-     * @memberof TodoAppComponent
      */
     toggleAllTodoDone(event: boolean): void {
         this.todos.forEach(item => (item.done = event));
@@ -68,7 +63,6 @@ export class TodoAppComponent {
 
     /**
      * editing todo
-     * @memberof TodoAppComponent
      */
     editingTodo(todo: Todo): void {
         if (!todo.done) {
@@ -78,7 +72,6 @@ export class TodoAppComponent {
 
     /**
      * cancel editing todo
-     * @memberof TodoAppComponent
      */
     cancelEditingTodo(todo: Todo): void {
         todo.edit = false;
@@ -86,7 +79,6 @@ export class TodoAppComponent {
 
     /**
      * edited todo
-     * @memberof TodoAppComponent
      */
     editedTodo(todo: Todo, input: HTMLInputElement): void {
         todo.value = input.value;
@@ -95,7 +87,6 @@ export class TodoAppComponent {
 
     /**
      * get todos
-     * @memberof TodoAppComponent
      */
     get todos(): Todo[] {
         return this.todoService.getAllTodos();
@@ -103,7 +94,6 @@ export class TodoAppComponent {
 
     /**
      * get todos all done be get todos
-     * @memberof TodoAppComponent
      */
     get allDone(): boolean {
         const todos = this.todos;
@@ -112,7 +102,6 @@ export class TodoAppComponent {
 
     /**
      * get todos all not done number
-     * @memberof TodoAppComponent
      */
     get todoCount(): number {
         return this.todos.filter(item => !item.done).length;
@@ -120,7 +109,6 @@ export class TodoAppComponent {
 
     /**
      * get todos all done number
-     * @memberof TodoAppComponent
      */
     get clearCount(): number {
         return this.todos.filter(item => item.done).length;
