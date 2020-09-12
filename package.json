@@ -21,8 +21,12 @@
     "@angular/platform-browser-dynamic": "^9.1.12",
     "@angular/router": "^9.1.12",
     "core-js": "^2.5.4",
+    "handlebars": "^4.7.6",
+    "http-proxy": "^1.18.1",
     "rxjs": "~6.6.2",
+    "tree-kill": "^1.2.2",
     "tslib": "^1.10.0",
+    "yargs-parser": "^20.0.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
