@@ -10372,13 +10372,13 @@ fsevents@~2.3.1:
   linkType: hard
 
 "socket.io-parser@npm:~4.0.3":
-  version: 4.0.4
-  resolution: "socket.io-parser@npm:4.0.4"
+  version: 4.0.5
+  resolution: "socket.io-parser@npm:4.0.5"
   dependencies:
     "@types/component-emitter": ^1.2.10
     component-emitter: ~1.3.0
     debug: ~4.3.1
-  checksum: ee2ffffa30e11ecebe690291ed91e5f949bf4ab9446ad6659b84488dd4f5908514867970539d32e1d94d4a5596e0d191f2e0ad92f707324cc4753ceb328aea2a
+  checksum: 87a73fd55ff1c853f6a359e31757f333748e3e52bc36ba27345b86ddd47d892e45d1e612c0b1cc4df90d7b161ce6ff930acd4bcb970943b1b0ea060f3134ef47
   languageName: node
   linkType: hard
 
